@@ -40,3 +40,4 @@ function getSteamId(steamId)
     steamId = string.lower(steamId) -- Conversión a minúsculas final
   return steamId
 end
+  
