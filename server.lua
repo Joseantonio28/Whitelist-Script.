@@ -13,7 +13,6 @@ AddEventHandler('playerConnecting', function(name, setReason)
   end
 end)
 
--- Devuelve verdadero si el valor está en la matriz, Falso en caso contrario
 
 function inArray(value, array)
   for _,v in pairs(array) do
@@ -25,7 +24,7 @@ function inArray(value, array)
   return false
 end
 
--- Devuelve verdadero si steamId comienza con "steam:", falso en caso contrario
+
 function isNativeSteamId(steamId)
   if string.sub(steamId, 0, 6) == "steam:" then
     return true
